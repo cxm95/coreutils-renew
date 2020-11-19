@@ -1,0 +1,11 @@
+extraction:
+   cpp:
+      prepare:
+        packages:
+        - libacl1-dev
+      configure:
+        command:
+        - ./configure LIBS="-lacl"
+      index:
+        build_command:
+        - make
